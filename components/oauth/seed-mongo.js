@@ -48,7 +48,7 @@ User.find({}).remove()
           .then(function() {
             OAuthClient.create({
                 client_id:'democlient',
-                client_secret:'democlientsecret',
+                // client_secret:'democlientsecret',
                 redirect_uri:'http://localhost/cb',
                 User:user._id
               })
